@@ -45,10 +45,25 @@ h1, h2 {
 */
 
 /*** INSERT YOUR WORK BELOW: ***/
-
-
-
-
+h1{
+  font-size: 32px;
+}
+h2{
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+h3{
+  font: bold 18px;
+}
+footer{
+  font-size: 12px;
+}
+a:hover{
+  style: underlined;
+}
+flex{
+  color: black;
+}
 
 
 
