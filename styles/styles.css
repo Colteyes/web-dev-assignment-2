@@ -8,10 +8,13 @@ The instructions describe the missing styling and layout that is needed; you wil
 
 /****************** page defaults ******************/
 
+
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    min-height: 100vh; /* to make sure it fits whatever size the resolution is in.*/
 }
 
 .fixed-width {
@@ -58,13 +61,19 @@ h3{
 footer{
   font-size: 12px;
 }
-a:hover{
-  style: underlined;
+a{
+  text-decoration: none;
 }
-flex{
-  color: black;
+a:hover{
+  text-decoration: underline;
 }
 
+a, header{
+  color: black;
+}
+p{
+  padding-bottom: 15px;
+}
 
 
 
@@ -74,7 +83,7 @@ flex{
 
 /***  INSTRUCTIONS:
 
-- The header and footer will be #c74365.
+- The header and footer will be #c74365. 
 - There will be 30px of space between the header and the main, and between the main and the footer.
 - Anchors in the header will be 18px.
 - The logo in the header will be 30px tall and wide, with 10px of space on all sides.
@@ -86,10 +95,23 @@ flex{
 
 /*** INSERT YOUR WORK BELOW: ***/
 
-
-
-
-
+header, footer{
+  background-color: #c74365;
+}
+header, main, footer{
+  padding: 30px;
+}
+header img{
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+nav{
+  margin-left: auto;
+}
+nav li{
+  margin-left: 15px;
+}
 
 
 
@@ -103,7 +125,14 @@ flex{
 
 /*** INSERT YOUR WORK BELOW: ***/
 
-
+.italics{
+  font-style: italic;
+}
+article{
+  background-color: lightgray;
+  padding: 15px;
+  margin: 15px;
+}
 
 
 
@@ -124,7 +153,30 @@ flex{
 
 /*** INSERT YOUR WORK BELOW: ***/
 
-
+.wide-column{
+  width: 420px;
+}
+.narrow-column{
+  width: 180px;
+}
+img{
+  width: 120px;
+}
+.labels{
+  width: 70px;
+  font-weight: bold;
+  text-align: right;
+}
+.light-background{
+  background-color: lightgray;
+  height: 140px;
+  margin-top: 30px;
+}
+.light-background h2{
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
 
 
 
@@ -145,6 +197,34 @@ flex{
 
 /*** INSERT YOUR WORK BELOW: ***/
 
+form{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+label{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
 
-
+input{
+  width: 100px;
+}
+form div{
+  padding: 15px;
+}
+button{
+  height: 21px;
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 600px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+button:hover{
+  background-color: gray;
+}
 
